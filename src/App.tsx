@@ -1,10 +1,12 @@
+import Navbar from './components/Navbar'
 function App() {
   
 
   return (
     <>
-      <h2 className="text-5xl text-red-500">hi</h2>
-      <button className="btn btn-soft btn-error">Error</button>
+         <div className="min-h-screen bg-white">
+      <Navbar />
+    </div>
     </>
   )
 }
