@@ -1,2 +1,32 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* Tailwind v4 theme tokens -> generates utilities like text-ink, bg-ink, etc. */
+@theme {
+  --color-ink: #0f1115;
+}
+
+
+:root {
+  --brand-gradient: linear-gradient(90deg, #f4463d 0%, #d71c80 55%, #9532d0 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+}
+
+.brand-gradient-text {
+  background-image: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.brand-gradient-bg {
+  background-image: var(--brand-gradient);
+  color: #fff;
+}
