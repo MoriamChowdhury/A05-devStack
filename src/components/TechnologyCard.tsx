@@ -9,7 +9,11 @@ interface Props {
 
 export default function TechnologyCard({ tech, isAdded, onAdd }: Props) {
   return (
-    <div className="flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
+    <div
+      className={`flex flex-col rounded-2xl border bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg ${
+        isAdded ? 'border-emerald-300' : 'border-slate-200 hover:border-slate-300'
+      }`}
+    >
       <div className="mb-3 flex items-start justify-between">
         <img src={tech.icon} alt={tech.name} className="h-9 w-9 object-contain" />
         <span className="rounded-full bg-pink-50 px-3 py-1 text-xs font-semibold text-pink-600">
