@@ -2,6 +2,7 @@
 
 Dev Stack is a small web app that helps developers choose technologies for their projects. It displays different frontend, backend, database, programming language, styling, and DevOps technologies as cards. Users can select the technologies they like and add them to their personal "Your Stack" panel to easily view and compare their choices.
 
+###Live link:https://capable-profiterole-942ed5.netlify.app/
 
 ## 🛠️ Technology Used
 - React 18 — component-based UI
