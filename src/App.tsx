@@ -6,6 +6,7 @@ import type { Technology } from './types'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import TechnologyGrid from './components/TechnologyGrid'
+import Footer from './components/Footer'
 import Loader from './components/Loader'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
   const [stack, setStack] = useState<Technology[]>([])
   const [loading, setLoading] = useState(true)
 
-  
+  // Fetch the technology list from the local JSON file. The loading state
+  // covers the time between the request firing and the data arriving.
   useEffect(() => {
     fetch('/data/technologies.json')
       .then((res) => res.json())
@@ -58,6 +60,7 @@ function App() {
           onRemoveAll={handleRemoveAll}
         />
       )}
+      <Footer />
       <ToastContainer position="bottom-right" autoClose={2500} />
     </div>
   )
