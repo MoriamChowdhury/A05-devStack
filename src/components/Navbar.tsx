@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
       <div className="mx-auto grid max-w-6xl grid-cols-3 items-center px-4 py-3 sm:px-6 md:flex md:justify-between">
-        {/* Mobile: hamburger (left) */}
+        
         <button
           className="flex h-9 w-9 items-center justify-center rounded-md text-ink md:hidden"
           aria-label="Toggle menu"
@@ -30,12 +30,12 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Brand logo: mobile-e center, desktop-e left */}
+       
         <div className="flex justify-center md:justify-start">
           <Logo />
         </div>
 
-        {/* Center: nav links (desktop only) */}
+       
         <nav className="hidden items-center gap-8 md:flex">
           {NAV_LINKS.map((link) => (
             <a
@@ -48,7 +48,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Right: auth buttons */}
+        
         <div className="flex items-center justify-end gap-2 sm:gap-4">
           <button className="text-xs font-medium text-slate-600 transition hover:text-pink-600 sm:text-sm">
             Sign In
