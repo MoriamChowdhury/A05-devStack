@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* Tailwind v4 theme tokens -> generates utilities like text-ink, bg-ink, etc. */
+
 @theme {
   --color-ink: #0f1115;
 }
@@ -28,5 +28,7 @@ body {
 
 .brand-gradient-bg {
   background-image: var(--brand-gradient);
+  background-size: 200% 100%;
+  background-position: left center;
   color: #fff;
 }
